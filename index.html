@@ -1,0 +1,39 @@
+index.html
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Page Title</title>
+</head>
+<body>
+  <h1> montel's new page </h1>
+  <script> 
+function playRound(playerSelection, computerSelection) {
+  // Make playerSelection case-insensitive
+  playerSelection = playerSelection.toLowerCase();
+
+  if (playerSelection === 'rock' && computerSelection === 'scissors') {
+    return 'You Win! Rock beats Scissors';
+  } else if (playerSelection === 'paper' && computerSelection === 'rock') {
+    return 'You Win! Paper beats Rock';
+  } else if (playerSelection === 'scissors' && computerSelection === 'paper') {
+    return 'You Win! Scissors beats Paper';
+  } else if (playerSelection === computerSelection) {
+    return "It's a tie!";
+  } else {
+    return `You Lose! ${computerSelection} beats ${playerSelection}`;
+  }
+}
+
+// Testing the playRound function
+const playerChoice = 'rock'; // Replace with the player's choice
+const computerChoice = 'scissors'; // Replace with the computer's choice (you can use getComputerChoice())
+
+const result = playRound(playerChoice, computerChoice);
+console.log(result);
+
+
+  
+  </script>
+</body>
+</html>
