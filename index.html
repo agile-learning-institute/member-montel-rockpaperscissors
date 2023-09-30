@@ -9,7 +9,7 @@ index.html
   <h1> montel's new page </h1>
   <script> 
 function playRound(playerSelection, computerSelection) {
-  // Make playerSelection case-insensitive
+  
   playerSelection = playerSelection.toLowerCase();
 
   if (playerSelection === 'rock' && computerSelection === 'scissors') {
@@ -25,9 +25,8 @@ function playRound(playerSelection, computerSelection) {
   }
 }
 
-// Testing the playRound function
-const playerChoice = 'rock'; // Replace with the player's choice
-const computerChoice = 'scissors'; // Replace with the computer's choice (you can use getComputerChoice())
+const playerChoice = 'rock'; 
+const computerChoice = 'scissors'; 
 
 const result = playRound(playerChoice, computerChoice);
 console.log(result);
