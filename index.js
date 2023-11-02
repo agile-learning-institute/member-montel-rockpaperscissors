@@ -37,7 +37,7 @@ function playRound(playerSelection, computerSelection) {
 
   // Check for a winner after each round
   if (playerScore === 5) {
-      updateMessage('Congratulations! You win the game!');
+      updateMessage('Congratulations! You won the game!');
       playerScore = 0;
       computerScore = 0;
   } else if (computerScore === 5) {
@@ -61,6 +61,14 @@ function updateComputerScore(score) {
   const computerScoreElement = document.getElementById('computerscore');
   computerScoreElement.textContent = 'Computer Score: ' + score;
 }
+
+// if (playerScore > computerScore) {
+//   log('Congratulations! You win the game!');
+// } else if (playerScore < computerScore) {
+//   log('Sorry, you lose the game.');
+// } else {
+//   log("It's a tie game.");
+// }
 
 function log(text) {
   const logsDiv = document.getElementById('logs');
